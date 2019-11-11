@@ -39,11 +39,11 @@ place code snippets, e.g. JSON, inside these fence delimiters and they will appe
 
 ![][main]
 
->> Shows a card for each contact in the datastore. This contact list can be filtered by name and gender. A contact can be edited or deleted a contact. 
+>> Shows a list of published games with a link to the user specified site. The listed games each have a comments link to see and post a comment to the chosen game board. There is also a like button for each board for users to upvote games they like.
 
 ![][comments]
 
->> . . . bla bla bla . . . . . 
+>> . . .  . . . . . 
 
 ## Routing.
 
@@ -57,11 +57,10 @@ place code snippets, e.g. JSON, inside these fence delimiters and they will appe
 
 ## Storybook.
 
-. . . . . Include a screenshot of the fully expanded list of stories from the tool's UI (see below). Group the stories appropriately (e.g. Contact page group) . . . .
+. . . . . A screenshot of the fully expanded list of stories from the tool's UI (see below). . . . .
 
 ![][stories]
 
-. . . . (Optional) State any non-standard Storybook add-ons used and include a screenshot(s) to illustrate.
 
 ## Backend (Optional).
 
@@ -77,5 +76,5 @@ place code snippets, e.g. JSON, inside these fence delimiters and they will appe
 
 [main]: ./images/mainView.png
 [comments]: ./images/commentPage.png
-[detail]: ./img/detail.png
-[stories]: ./img/stories.png
+[detail]: ./images/detail.png
+[stories]: ./images/storybook.png
