@@ -48,7 +48,7 @@ storiesOf("Hacker App/Comment page/Comment Form", module).add("default", () => (
   const comment = {
     id: 1,
     author: "Joe Bloggs",
-    comment: "I agree with .....",
+    comment: "Darksiders is my favourite",
     upvotes: 10
   };
   
