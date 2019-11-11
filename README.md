@@ -4,14 +4,15 @@ Name: Cían Daly
 
 ## Overview.
 
-...... A statement of the app concept and its objectives (a paragraph) ........
+ A game review app with a message board. Users can post a game they want to discuss about with a link to more information of the game or where to purchase the game. Users can then upvote games they like and add comments to the comment section of each game message board. Users can then like comments made by users.
 
-. . . . . List of user features  . . . .
+. . . . List of user features  . . . .
 
 - User can post a new review
 - User can see other reviews
-- User can like posts 
-- User can leave a comment on a post
+- User can like posted games 
+- User can leave a comment on a game message board
+- User can like comments made for each game 
 
 
 ## Setup.
@@ -22,20 +23,25 @@ Name: Cían Daly
 -npm start
 
 
+
 ## Data Model Design.
 
-. . . . . A diagram of app's data model (see example below) AND/OR a sample of the test data used (JSON or equivalent).
-
-![][model]
-
-. . . Briefly explain any non-trivial aspects of the model . . . . .
+ Text format of data model used. A stub api of one of the posts created with and array of comments.
 
 ~~~
-place code snippets, e.g. JSON, inside these fence delimiters and they will appear in a block-like structure.
+        this.posts = [
+        {
+            id: 1,
+            title: "Metal Gear Solid V: The Phantom Pain",
+            link: "https://store.steampowered.com/app/287700/METAL_GEAR_SOLID_V_THE_PHANTOM_PAIN/",
+            author: "Konami, Kojima Productions",
+            comments: [],
+            upvotes: 10
+        }
 ~~~
 ## UI Design.
 
-. . . . . Screenshots of the app's views with brief statements of their use (see examples below) . . . . . . .
+. . . . Screenshots of the app's views with brief statements of their use . . . . 
 
 ![][main]
 
@@ -43,36 +49,32 @@ place code snippets, e.g. JSON, inside these fence delimiters and they will appe
 
 ![][comments]
 
->> . . .  . . . . . 
+>> Displays comments made by user for chosen game. User can then choose to write their own message and their username for the comment. They click submit to add their comment and it is displayed on the game's comment page. 
 
 ## Routing.
 
-. . . . List each route supported by the app. For each one state the associated view and whether it's public/private (requires authentication) . . . . .
-
-- /articles (public)- displays all published articles - title and author only.
-- /articles/:id (private) - detail view of a particular article.
-+ /articles/:author:id - display all articles by a specific author.
-- etc
-- etc
+- / (public) - main home page of app, displays all games with a review message board.
+- /posts/:post_id (public) - displays message board of chosen game with comments from user.
 
 ## Storybook.
 
-. . . . . A screenshot of the fully expanded list of stories from the tool's UI (see below). . . . .
+. . . A screenshot of the fully expanded list of stories from the tool's UI . . .
 
 ![][stories]
 
 
 ## Backend (Optional).
 
-. . . . . Briefly explain any backend used by the app (e.g. JSON-server, Open API) . . . . . .  
+. . . . . There is no backend functionality implemented for this app . . . . . .  
 
 ## Authentication (Optional).
 
-. . . . Briefly explain the authentication method used by your app (e.g. JWT, Firebase) ). If user registration is not supported, mention test username/password pairs available . . . . . .
+. . . There is no user authentication implemented for this app. . .
 
 ## Independent learning.
 
-. . . . . State any non-standard aspects of React or other related technologies that you researched and applied in this assignment, other than those covered by the two previous sections . . . . .
+ Researched how to build and deploy my app to a domain on the internet. The app is hosted and deployed on Surge to view it as an end user would on the internet.
+ I watched a tutorial of how to use Firebase for user authentiaction for a sign-up and login process but was unable to implement this fully due to time contrainsts.
 
 [main]: ./images/mainView.png
 [comments]: ./images/commentPage.png
