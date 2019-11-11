@@ -5,63 +5,55 @@ class StubAPI {
         this.posts = [
         {
             id: 1,
-            title: "Why You Can No Longer Get Lost in the Crowd",
-            link: "https://www.nytimes.com/2019/04/17/opinion/data-privacy.html",
-            author: "Woodrow Hartzog",
+            title: "Metal Gear Solid V: The Phantom Pain",
+            link: "https://store.steampowered.com/app/287700/METAL_GEAR_SOLID_V_THE_PHANTOM_PAIN/",
+            author: "Konami, Kojima Productions",
             comments: [],
             upvotes: 10
         },
         {
             id: 2,
-            title: "Samsung's folding phone breaks for reviewers",
-            link: "https://www.bbc.com/news/technology-47970788",
-            author: "Dave Lee",
+            title: "Forza Motorsport 7",
+            link: "https://www.xbox.com/en-IE/games/forza-7",
+            author: "Turn 10",
             comments: [],
             upvotes: 14
         },
         {
             id: 3,
             title:
-            "Microsoft turned down facial-recognition sales on human rights concerns",
-            link: null,
-            author: "Joseph Mennn",
+            "Borderlands 2",
+            link: "https://www.2k.com/en-US/game/borderlands-2/",
+            author: "2K",
             comments: [],
             upvotes: 12
         },
         {
             id: 4,
             title:
-            "Follow-up: I found two identical packs of Skittles, among 468 packs with a total of 27,740 Skittles",
-            link: "https://possiblywrong.wordpress.com/",
-            author: "unknown",
+            "Call of Duty Modern Warfare 2",
+            link: "https://callofduty.fandom.com/wiki/Call_of_Duty:_Modern_Warfare_2",
+            author: "Infinity Ward",
             comments: [],
-            upvotes: 2
+            upvotes: 10
         },
         {
             id: 5,
-            title: "THE COMING DESERT",
+            title: "Mario Kart 8",
             link:
-            "https://newleftreview.org/issues/II97/articles/mike-davis-the-coming-desert",
-            author: "MIKE DAVIS",
+            "https://www.nintendo.com/games/detail/mario-kart-8-deluxe-switch/",
+            author: "Nintendo",
             comments: [],
             upvotes: 8
         },
         {
             id: 6,
-            title: "Sleep myths 'damaging your health'",
-            link: "https://www.bbc.com/news/health-47937405",
-            author: "James Gallagher",
+            title: "Hellblade: Senua's Sacrifice",
+            link: "https://store.steampowered.com/app/414340/Hellblade_Senuas_Sacrifice/",
+            author: "Ninja Theory",
             comments: [],
             upvotes: 10
         },
-        {
-            id: 7,
-            title: "Planet’s ocean-plastics problem detailed in 60-year data set",
-            link: "https://www.nature.com/articles/d41586-019-01252-0",
-            author: "Matthew Warren",
-            comments: [],
-            upvotes: 20
-        }
         ];
     }
 

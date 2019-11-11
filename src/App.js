@@ -7,8 +7,8 @@ import _ from 'lodash';
 
 export default class App extends Component {   
 
-    addNewsItem = (title, author, link) => {
-        api.add(title, author, link);
+    addNewsItem = (title,  publisher, link) => {
+        api.add(title,  publisher, link);
         this.setState({});
     };
     

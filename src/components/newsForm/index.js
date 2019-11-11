@@ -2,22 +2,22 @@ import React, { Component } from 'react';
 import './newsForm.css';
 
 export default class Form extends Component {
-  state = { title: '', author: '', link: ''};
+  state = { title: '', publisher: '', link: ''};
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.handleAdd(this.state.title, this.state.author, this.state.link)
-    this.setState({title:'', author:'', link:''})
+    this.props.handleAdd(this.state.title, this.state.publisher, this.state.link)
+    this.setState({title:'',  publisher:'', link:''})
   }
 
   handleTitleChange = (e) => this.setState({title: e.target.value});
-  handleAuthorChange = (e) => this.setState({author: e.target.value});
+  handlePublisherChange = (e) => this.setState({ publisher: e.target.value});
   handleLinkChange = (e) => this.setState({link: e.target.value});
 
     render() {
         return (
           <form className="form bg-dark text-light">
-          <h3>Add a news item</h3>
+          <h3>Submit a game review</h3>
           <div className="form-group">
               <input type="text"
                   className="form-control"
@@ -28,9 +28,9 @@ export default class Form extends Component {
           <div className="form-group">
                 <input type="text"
                     className="form-control"
-                    placeholder="Author"
-                    value={this.state.author}
-                    onChange={ this.handleAuthorChange } />
+                    placeholder="Publisher"
+                    value={this.state.publisher}
+                    onChange={ this.handlePublisherChange } />
             </div>
             <div className="form-group">
                 <input type="text"

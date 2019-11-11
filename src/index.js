@@ -13,7 +13,7 @@ const Router = (props) => {
           <div className="row">
             <div className="col-md-6 offset-3">
               <h1>
-                <Link to="/">Hacker News</Link>
+                <Link to="/">GameBunker Reviews</Link>
               </h1>
             </div>
           </div>
