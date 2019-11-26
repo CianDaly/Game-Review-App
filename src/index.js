@@ -21,14 +21,14 @@ const Router = (props) => {
           <div className="row">
             <div className="col-md-6 offset-3">
               <h1>
-                <Link to="/">GameBunker - Message Board and Reviews</Link>
+                <Link to="/home">GameBunker - Message Board and Reviews</Link>
               </h1>
             </div>
           </div>
         </div>
         <Switch>
           <Route path="/posts/:post_id" component={CommentPage} />
-          <Route exact path="/" component={App} />
+          <PrivateRoute exact path="/home" component={App} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />
           <Redirect from="*" to="/" />
