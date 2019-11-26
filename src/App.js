@@ -4,6 +4,7 @@ import Form from './components/newsForm/';
 import api from './dataStore/stubAPI';
 
 import _ from 'lodash';
+import "./App.css";
 
 export default class App extends Component {   
 

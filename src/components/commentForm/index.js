@@ -25,7 +25,7 @@ export default class Form extends Component {
   render() {
     return (
       <form style={{ marginTop: "30px" }}>
-        <h3>Add a new comment</h3>
+        <h3>Add a review</h3>
 
         <div className="form-group">
           <input

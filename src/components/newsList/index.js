@@ -10,6 +10,10 @@ export default class NewsList extends Component {
                 upvoteHandler = {this.props.upvoteHandler}
                 removeHandler = {this.props.removeHandler} /> 
         );
-      return <Fragment>{items}</Fragment>;
+      return (
+      <Fragment>
+        <div>{items}</div>
+      </Fragment>
+      );
     }
 }

@@ -67,3 +67,13 @@ storiesOf("Hacker App/Comment page/Comment Form", module).add("default", () => (
       <CommentList upvoteHandler={action("upvoted")} comments={defaultComments} />
     );
   });
+
+  import FilterControls from '../src/components/filterControls/'
+
+storiesOf("hackerNews/Header", module).add("default", () => (
+    <Header reviews={10} />
+));
+// NEW STORY
+storiesOf("hackerNews/Filter Controls", module).add("default", () => (
+  <FilterControls />
+));   

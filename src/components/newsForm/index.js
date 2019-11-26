@@ -40,7 +40,8 @@ export default class Form extends Component {
                 onChange={ this.handleLinkChange } />
             </div>
             <button type="submit" className="btn btn-primary"
-                onClick={this.handleSubmit}>Add</button>
+                onClick={this.handleSubmit}>Add
+               </button>
         </form>
         );
     }
