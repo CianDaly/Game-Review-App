@@ -24,13 +24,22 @@ const Router = (props) => {
                 <Link to="/home">GameBunker - Message Board and Reviews</Link>
               </h1>
             </div>
+            <div className="col-md-1">
+              <button className="btn btn-dark" onClick={() => app.auth().signOut()}>
+                Log Out
+              </button>
+            </div>
+            <div className="col-md-1">
+              <button className="btn btn-dark"> <Link to="/login">Log in</Link>
+              </button>
+            </div>
           </div>
         </div>
         <Switch>
           <Route path="/posts/:post_id" component={CommentPage} />
           <PrivateRoute exact path="/home" component={App} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/signup" component={Signup} />
+          <Route exact path="/" component={Signup} />
           <Redirect from="*" to="/" />
         </Switch>
       </div>
