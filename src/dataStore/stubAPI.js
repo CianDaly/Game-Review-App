@@ -113,7 +113,7 @@ class StubAPI {
     }
 
     removePost(id){
-        let elements = _.remove(this.posts, post => post.id == id);
+        let elements = _.remove(this.posts, post => post.id === id);
         return elements;
     }
 }
