@@ -78,7 +78,7 @@ The home page of the app, where game reviews and comment posts can be seen, is n
 
 ## Independent learning.
 
- Researched how to build and deploy my app to a domain on the internet. The app is hosted and deployed on Surge to view it as an end user would on the internet.
+ Researched how to build and deploy my app to a domain on the internet. The app is hosted and deployed on Surge, 
 
 
 [main]: ./images/mainView.png
