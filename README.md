@@ -13,6 +13,8 @@ Name: Cían Daly
 - User can like posted games 
 - User can leave a comment on a game message board
 - User can like comments made for each game 
+- User can sign up to web app and make an account
+- User can log in to their account to view reviews
 
 
 ## Setup.
@@ -26,7 +28,7 @@ Name: Cían Daly
 
 ## Data Model Design.
 
- Text format of data model used. A stub api of one of the posts created with and array of comments.
+ Text format of data model used. A stub api of one of the posts created with an array of comments.
 
 ~~~
         this.posts = [
@@ -53,7 +55,9 @@ Name: Cían Daly
 
 ## Routing.
 
-- / (public) - main home page of app, displays all games with a review message board.
+- /home (private) - main home page of app, displays all games with a review message board on the users account.
+- /login (public) - page on which user can log into their account and view game review app.
+- / (public) - signup page of app where user creates accoutn to log in with.
 - /posts/:post_id (public) - displays message board of chosen game with comments from user.
 
 ## Storybook.
@@ -69,12 +73,13 @@ Name: Cían Daly
 
 ## Authentication (Optional).
 
-. . . There is no user authentication implemented for this app. . .
+Incorporated Google Firebase authentication for users to sign up accounts to app database and log in with these credentials.
+The home page of the app, where game reviews and comment posts can be seen, is not accesible before the user logs in. 
 
 ## Independent learning.
 
  Researched how to build and deploy my app to a domain on the internet. The app is hosted and deployed on Surge to view it as an end user would on the internet.
- I watched a tutorial of how to use Firebase for user authentiaction for a sign-up and login process but was unable to implement this fully due to time contrainsts.
+
 
 [main]: ./images/mainView.png
 [comments]: ./images/commentPage.png
