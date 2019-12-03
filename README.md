@@ -45,6 +45,15 @@ Name: Cían Daly
 
 . . . . Screenshots of the app's views with brief statements of their use . . . . 
 
+![][signup]
+
+>> Initial page when connected to app. User can create an account to login with and use the app.
+
+
+![][login]
+
+>> If user has an account already for using the app, they can click the login button and be brought to this page then enter their account details and access the main page.
+
 ![][main]
 
 >> Shows a list of published games with a link to the user specified site. The listed games each have a comments link to see and post a comment to the chosen game board. There is also a like button for each board for users to upvote games they like.
@@ -78,10 +87,12 @@ The home page of the app, where game reviews and comment posts can be seen, is n
 
 ## Independent learning.
 
- Researched how to build and deploy my app to a domain on the internet. The app is hosted and deployed on Surge, 
+ Researched how to build and deploy my app to a domain on the internet. The app is hosted and deployed on Surge, the url is: gamebunker.surge.sh.
 
 
 [main]: ./images/mainView.png
 [comments]: ./images/commentPage.png
 [detail]: ./images/detail.png
 [stories]: ./images/storybook.png
+[signup]: ./images/signup.png
+[login]: ./images/login.png
