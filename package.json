@@ -6,14 +6,16 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
     "firebase": "^7.3.0",
     "jquery": "^3.4.0",
     "lodash": "^4.17.15",
+    "mongoose": "^5.8.0",
     "popper.js": "^1.15.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
@@ -23,11 +25,12 @@
     "surge": "^0.21.3"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
+    "start": "nodemon --ignore hackerNews/* --exec babel-node index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:8080",
   "eslintConfig": {
     "extends": "react-app"
   },
