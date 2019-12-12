@@ -1,27 +1,22 @@
-// Load the http module to create an http server.
-import http from 'http';
-import dotenv from 'dotenv'
-import greeting from './greeting.js';
+import dotenv from 'dotenv';
+import express from 'express';
+import postsRouter from './api/posts';
+import bodyParser from 'body-parser';
 
-dotenv.config()
 
-const port = process.env.PORT
+dotenv.config();
 
-// Configure our HTTP server to respond with Testing Server to all requests.
-const server = http.createServer((req, res) => {
-    let lang = req.headers['accept-language'];
-    const defaultLang='en';
-    if (!greeting[lang]) lang=defaultLang;
-    const response={
-      lang: lang,
-      message: greeting[lang],
-    };
-  
-    res.writeHead(200, {'Content-Type': 'text/plain',
-                        'Content-Language': response.lang});
-    res.end(response.message);
-  });
-  
-  server.listen(port);
-// Put a friendly message on the terminal
-console.log(`Server running at ${port}`);
+const app = express();
+
+const port = process.env.PORT;
+
+//configure body-parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+
+app.use('/api/posts', postsRouter);
+app.use(express.static('public'));
+
+app.listen(port, () => {
+  console.info(`Server running at ${port}`);
+});
