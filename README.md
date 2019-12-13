@@ -1,9 +1,13 @@
-# BSc (Hons.) Level 8 - Assignment 1 - Single Page app.
+# BSc (Hons.) Level 8 - Assignment 2 - API for assignment 1.
 
 Name: Cían Daly
 
 ## Overview.
 
+Assignment 2 info:
+Backend side of assignment 1 - implement an API to be used
+ 
+ Assignment 1 info:
  A game review app with a message board. You can create an account to log in with or enter your login info to go to the app home page. Users can post a game they want to discuss about with a link to more information of the game or where to purchase the game. Users can then upvote games they like and add comments to the comment section of each game message board. Users can then like comments made by users.
 
 . . . . List of user features  . . . .
